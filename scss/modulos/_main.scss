@@ -1,0 +1,94 @@
+main{
+    display: grid;
+    background-color: $color-fondo;
+    grid-template-rows: 0.5fr 0.2fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "... section1 ..."
+    "... section2 ..."
+    "... section3 ...";
+
+    .section__1{
+        grid-area: section1 ;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        margin: 40px 0 10px 0;
+        .banner {
+            width: 500px;
+            height: 200px;
+            margin:0;
+            cursor:pointer;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .section__2{
+        grid-area: section2;
+        display:flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .buscador{
+            background-color: #ffffff;
+            position:relative;
+            display: inline;
+            margin-top: 2rem;
+            width: 30rem;
+            height: 2rem;
+            border-radius: 10px;
+            font-style: italic;
+            font-family: $inter;
+            font-size: 15px ;
+        }
+        .botonBuscador{
+            background-color: #0000ff;
+            position: relative;
+            display: inline;
+            border-radius: 10px;
+            width: 6rem;
+            height: 2rem;
+            font-family: $inter;
+            color: #ffffff;
+            margin: 10px;
+            padding: 0;
+            &:hover {
+                background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+                color: #ffffff;
+                position: relative;
+                display: inline;
+                border-radius: 10px;
+                border-style: groove;
+                width: 10rem;
+                height: 2rem;
+                font-family: $inter;
+                margin: 10px;
+                padding: 0;
+                transition-duration: 2s;
+            }
+        }
+    }
+    .section__3 {
+        grid-area: section3;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 30px;
+        h2{
+            margin: 100px 0 30px;
+            color: $color-principal;
+            font-family: $inter;
+        }
+        .contenedorImg{
+            width: 100vw;
+            margin-bottom: 4em;
+            img{
+                width: 30%;
+                height: 100%;
+            }
+        }
+    }
+}

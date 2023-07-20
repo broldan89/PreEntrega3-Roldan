@@ -41,7 +41,7 @@ main{
             height: 2rem;
             border-radius: 10px;
             font-style: italic;
-            font-family: $inter;
+            font-family: $fuente-principal;
             font-size: 15px ;
         }
         .botonBuscador{
@@ -51,12 +51,12 @@ main{
             border-radius: 10px;
             width: 6rem;
             height: 2rem;
-            font-family: $inter;
+            font-family: $fuente-principal;
             color: #ffffff;
             margin: 10px;
             padding: 0;
             &:hover {
-                background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+                background-image: $color-gradiente;
                 color: #ffffff;
                 position: relative;
                 display: inline;
@@ -64,7 +64,7 @@ main{
                 border-style: groove;
                 width: 10rem;
                 height: 2rem;
-                font-family: $inter;
+                font-family: $fuente-principal;
                 margin: 10px;
                 padding: 0;
                 transition-duration: 2s;
@@ -80,7 +80,7 @@ main{
         h2{
             margin: 100px 0 30px;
             color: $color-principal;
-            font-family: $inter;
+            font-family: $fuente-principal;
         }
         .contenedorImg{
             width: 100vw;

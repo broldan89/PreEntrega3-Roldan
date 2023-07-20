@@ -4,26 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Todos el mundo tech en un solo lugar" />
 
+    <!-- ICONO DE PESTAÑAS -->
     <link
       rel="shortcut icon"
       href="./assets/icon/favicon.ico"
       type="image/x-icon"
     />
+    <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/estilo.css" />
+    <!-- PAGINA DE ESTILOS -->
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Inicio</title>
   </head>
   <body>
@@ -32,13 +29,16 @@
         <div
           class="col-xxl-6 col-sm-12 w-50 d-flex flex-row justify-content-start"
         >
-          <img
-            src="./assets/img/Arcade Gamer.png"
-            alt="Logo"
-            width="90"
-            height="85"
-            class="d-inline-block align-text-top"
-          />
+          <a href="./index.html">
+            <img
+              src="./assets/img/Arcade Gamer.png"
+              alt="Logo"
+              width="90"
+              height="85"
+              class="d-inline-block align-text-top"
+              href="./index.html"
+            />
+          </a>
         </div>
         <div
           class="col-xxl-6 col-sm-12 w-50 d-flex flex-row justify-content-end"
@@ -90,42 +90,46 @@
     </header>
     <main>
       <!-- Banner -->
-      <div id="section__1">
-        <img
-          id="banner"
-          src="./assets/img/pixelbanner.gif"
-          alt="Ups! Not found"
-        />
+      <div class="section__1">
+        <a href="./pages/compras.html">
+          <img
+            class="banner"
+            src="./assets/img/pixelbanner.webp"
+            alt="Banner Promocion"
+          />
+        </a>
       </div>
       <!-- Barra de busqueda -->
-      <div id="section__2">
+      <div class="section__2">
         <input
           type="text"
           name=""
-          id="buscador"
+          class="buscador"
           size="50px"
           placeholder="Buscar Repuesto"
         />
-        <div id="contenedorBoton">
-          <button id="botonBuscador" type="submit">Enviar</button>
+        <div class="contenedorBoton">
+          <button class="botonBuscador" type="submit">Enviar</button>
         </div>
       </div>
 
       <!-- Subtitulo -->
-      <div id="section__3">
-        <h1>Asesoramiento, servicio de venta y post venta</h1>
-      </div>
-      <div class="contenedorImg">
-        <img src="./assets/img/asesoramiento.jpeg" alt="Not Found" />
+      <div class="section__3">
+        <h2>Asesoramiento, servicio de venta y post venta</h2>
+        <div class="contenedorImg">
+          <a href="./pages/servicios.html">
+            <img src="./assets/img/asesor.webp" alt="Imagen de asesor" />
+          </a>
+        </div>
       </div>
     </main>
     <footer>
       <div class="pagos">
         <h3>MEDIOS DE PAGO</h3>
-        <img src="./assets/icon/bx-credit-card.svg" alt="" />
-        <img src="./assets/icon/bx-qr.svg" alt="" />
-        <img src="./assets/icon/bx-transfer.svg" alt="" />
-        <img src="./assets/icon/bxs-bank.svg" alt="" />
+        <img src="./assets/icon/bx-credit-card.svg" alt="Tarjeta de credito" />
+        <img src="./assets/icon/bx-qr.svg" alt="Codigo QR" />
+        <img src="./assets/icon/bx-transfer.svg" alt="Transferencia" />
+        <img src="./assets/icon/bxs-bank.svg" alt="Deposito" />
       </div>
       <div class="derechos">
         <p>
@@ -134,22 +138,31 @@
         </p>
       </div>
       <div class="redes">
+        <a href="https://www.facebook.com">
+          <img
+            class="redes"
+            url="https://www.google.com.ar"
+            src="./assets/icon/bxl-facebook-circle.svg"
+            alt="Facebook"
+          />
+        </a>
+        <a href="https:www.instagram.com">
+          <img
+            class="redes"
+            url="https://www.google.com.ar"
+            src="./assets/icon/bxl-instagram.svg"
+            alt="Instagram"
+          />
+        </a>
+        <a href="https://web.whatsapp.com">
+          <img
+            class="redes"
+            url="https://www.google.com.ar"
+            src="./assets/icon/bxl-whatsapp.svg"
+            alt="Wathsapp"
+          />
+        </a>
         <h3>Nuestras redes sociales</h3>
-        <img
-          url="https://www.google.com.ar"
-          src="./assets/icon/bxl-facebook-circle.svg"
-          alt=""
-        />
-        <img
-          url="https://www.google.com.ar"
-          src="./assets/icon/bxl-instagram.svg"
-          alt=""
-        />
-        <img
-          url="https://www.google.com.ar"
-          src="./assets/icon/bxl-whatsapp.svg"
-          alt=""
-        />
       </div>
     </footer>
     <script

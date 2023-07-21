@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
 // PALETA DE COLORES Y GRADIENTES
 $color-principal: #ff0099;
+$color-secundario: #fff;
 $color-fondo: #333;
 $color-gradiente: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 
 
 // FUENTES
 
-$fuente-principal: "Inter", sans-serif;
+$fuente-principal: 'inter', serif;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
 header {
   background-color: #000;
   width: 100%;
@@ -11,7 +12,7 @@ header {
   header nav {
     margin-right: 10px; }
   header .nav-link {
-    font-family: "Inter", sans-serif;
+    font-family: "inter", serif;
     color: #ff0099;
     font-weight: bolder; }
     header .nav-link:hover {
@@ -58,7 +59,7 @@ main {
       height: 2rem;
       border-radius: 10px;
       font-style: italic;
-      font-family: "Inter", sans-serif;
+      font-family: "inter", serif;
       font-size: 15px; }
     main .section__2 .botonBuscador {
       background-color: #0000ff;
@@ -67,7 +68,7 @@ main {
       border-radius: 10px;
       width: 6rem;
       height: 2rem;
-      font-family: "Inter", sans-serif;
+      font-family: "inter", serif;
       color: #ffffff;
       margin: 10px;
       padding: 0; }
@@ -80,7 +81,7 @@ main {
         border-style: groove;
         width: 10rem;
         height: 2rem;
-        font-family: "Inter", sans-serif;
+        font-family: "inter", serif;
         margin: 10px;
         padding: 0;
         transition-duration: 2s; }
@@ -93,13 +94,92 @@ main {
     main .section__3 h2 {
       margin: 100px 0 30px;
       color: #ff0099;
-      font-family: "Inter", sans-serif; }
+      font-family: "inter", serif; }
     main .section__3 .contenedorImg {
       width: 100vw;
       margin-bottom: 4em; }
       main .section__3 .contenedorImg img {
         width: 30%;
         height: 100%; }
+
+.mainNosotros {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainNosotros .tituloNosotros h1 {
+    margin: 100px;
+    font-weight: 200;
+    color: #ff0099;
+    font-family: "inter", serif; }
+  .mainNosotros .historiaPixel {
+    width: 60%;
+    height: 100vh;
+    margin: 100px;
+    color: #ff0099;
+    text-align: center; }
+
+.mainServicios {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainServicios .tituloServicios {
+    margin: 60px;
+    font-weight: 200;
+    color: #ff0099;
+    font-family: "inter", serif; }
+  .mainServicios img {
+    height: 530px;
+    width: 530px;
+    border-radius: 10px; }
+  .mainServicios .p_servicios {
+    color: #ffffff;
+    font-size: medium;
+    font-family: "inter", serif;
+    margin-bottom: 10px 0 30px 0; }
+
+.mainCompras {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainCompras .contenedorCompras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center; }
+    .mainCompras .contenedorCompras h6 {
+      color: #ffffff; }
+    .mainCompras .contenedorCompras .comprasConteImg {
+      margin: 0; }
+      .mainCompras .contenedorCompras .comprasConteImg:hover {
+        height: 25em;
+        width: 25em;
+        transform: scale(1.2);
+        transition: 1s; }
+      .mainCompras .contenedorCompras .comprasConteImg img {
+        height: 20em;
+        width: 20em;
+        margin: 50px; }
+
+.mainContacto {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0099;
+  font-family: "inter", serif; }
+  .mainContacto .containerForm {
+    width: 60%;
+    height: 100; }
+  .mainContacto h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; }
 
 footer {
   width: 100%;
@@ -115,22 +195,38 @@ footer {
   align-items: center; }
   footer h3 {
     color: #ffffff;
-    font-family: "Inter", sans-serif;
+    font-family: "inter", serif;
     font-weight: 100;
-    font-size: medium; }
+    font-size: medium;
+    margin: 0; }
   footer img {
     width: 2rem;
     height: 2rem; }
   footer .pagos {
     display: flex;
     text-align: center; }
+    footer .pagos h3 {
+      display: flex;
+      align-items: center; }
   footer .derechos {
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #ffffff;
     font-weight: 100;
     font-size: smaller; }
+    footer .derechos p {
+      color: #ffffff;
+      margin: 0 1em; }
   footer .redes {
     display: flex;
     text-align: center; }
+    footer .redes h3 {
+      display: flex;
+      align-items: center; }
+
+.footerContacto {
+  display: flex; }
+
+* {
+  margin: 0;
+  padding: 0; }
